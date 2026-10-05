@@ -1,0 +1,37 @@
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-03 07:37 -0400
+Nmap scan report for 192.168.165.1
+Host is up (0.0053s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+8000/tcp open  http          Splunkd httpd
+| http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_Requested resource was http://192.168.165.1:8000/en-US/account/login?return_to=%2Fen-US%2F
+|_http-server-header: Splunkd
+| http-robots.txt: 1 disallowed entry 
+|_/
+8089/tcp open  ssl/http      Splunkd httpd
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: Splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2026-08-12T06:48:39
+|_Not valid after:  2029-08-11T06:48:39
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: splunkd
+MAC Address: 00:50:56:C0:00:08 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-10-03T11:37:56
+|_  start_date: N/A
+|_nbstat: NetBIOS name: DESKTOP-VB9O3S4, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:c0:00:08 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 71.42 seconds

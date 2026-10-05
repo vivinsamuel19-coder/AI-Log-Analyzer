@@ -1,0 +1,8 @@
+2026-10-03 14:15:02 UTC - SSH Login attempt failed for user root from 192.168.1.105 port 44210
+2026-10-03 14:15:05 UTC - SSH Login attempt failed for user root from 192.168.1.105 port 44212
+2026-10-03 14:15:08 UTC - SSH Login attempt failed for user admin from 192.168.1.105 port 44214
+2026-10-03 14:15:12 UTC - SSH Login successful for user admin from 192.168.1.105 port 44218
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5
+80/tcp   open  http    Apache httpd 2.4.41
+445/tcp  open  netbios-ssn Samba smbd 4.13.17-Ubuntu
